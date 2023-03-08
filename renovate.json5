@@ -1,0 +1,59 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:base"
+	],
+  "packageRules": [
+		{
+			"groupName": "minor-updates",
+			"matchUpdateTypes": ["minor", "patch"]
+		},
+		{
+			"groupName": "major-updates",
+			"matchUpdateTypes": ["major"]
+		}
+	]
+/*
+  "packageRules": [
+    {
+      "matchConfidence": ["high", "very-high"],
+      "groupName": "high merge confidence"
+    },
+    {
+      "matchConfidence": ["low"],
+      "dependencyDashboardApproval": true
+    },
+  ]
+*/
+  
+/*
+  "packageRules": [
+    {
+      "groupName": "My Special Group"
+      "matchConfidenceValues": ["high", "very-high"],
+      "pattern": "com.mycompany/*"
+      "...[other static filters]…": ….
+    },
+  */
+  
+  /*
+    "packageRules": [
+    {
+      "matchConfidence": ["low"],
+      "dependencyDashboardApproval": true
+    },
+  ]
+
+  */
+  
+  /*
+    "packageRules": [
+    {
+      "matchConfidence": ["high", "very-high"],
+      "matchUpdateTypes": [“patch”, “minor”],
+      "automerge": true
+    },
+  ]
+
+  */
+}
