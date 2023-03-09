@@ -5,6 +5,8 @@
     "github>whitesource/merge-confidence:beta"
   ],
   "ignorePresets": ["github>mdp-forks/mc:dev"],
+  
+  /*
   "packageRules": [
     {
       "groupName": "minor-updates",
