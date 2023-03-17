@@ -8,11 +8,11 @@
   
   "packageRules": [
     {
-      "groupName": "Updates with High merge confidence",
+      "groupName": "with High merge confidence",
       "matchUpdateTypes": ["minor", "patch"]
     },
     {
-      "groupName": "Updates without High merge confidence",
+      "groupName": "without High merge confidence",
       "matchUpdateTypes": ["major"]
     }
   ]
