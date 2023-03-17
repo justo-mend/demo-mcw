@@ -5,14 +5,14 @@
     "github>whitesource/merge-confidence:beta"
   ],
   "ignorePresets": ["github>mdp-forks/mc:dev"],
-  /*
+  
   "packageRules": [
     {
-      "groupName": "minor-updates",
+      "groupName": "Updates with High merge confidence",
       "matchUpdateTypes": ["minor", "patch"]
     },
     {
-      "groupName": "major-updates",
+      "groupName": "Updates without High merge confidence",
       "matchUpdateTypes": ["major"]
     }
   ]
