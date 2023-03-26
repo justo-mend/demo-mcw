@@ -27,11 +27,12 @@
     },
     */
     
-    /* Group High and Very High confidence updates */
+    /* Group High and Very High confidence updates
     {
       "matchConfidence": ["high", "very high"],
       "groupName": "high merge confidence"
     },
+    */
     
     /* Suppress Low and neutral Confidence updates */
     {
