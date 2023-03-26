@@ -7,6 +7,22 @@
   "ignorePresets": ["github>mdp-forks/mc:dev"],
   "labels": ["update"],
   "packageRules": [
+    
+    {
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true,
+      "commitMessagePrefix": "MAJOR ",
+    }, 
+    {
+      "matchUpdateTypes": ["minor"],
+      "dependencyDashboardApproval": true,
+      "commitMessagePrefix": "MINOR ",
+    }, 
+    {
+      "matchUpdateTypes": ["patch"],
+      "dependencyDashboardApproval": true,
+      "commitMessagePrefix": "PATCH ",
+    },
   
     /* Apply labels based on Merge Confidence
     {
@@ -34,12 +50,12 @@
     },
     */
     
-    /* Suppress Low and neutral Confidence updates */
+    /* Suppress Low and neutral Confidence updates
     {
       "matchUpdateTypes": ["patch", "minor"],
       "dependencyDashboardApproval": true,
     },    
-  
+    */
 
     /* Automerge Very High Confidence updates
     {
