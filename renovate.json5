@@ -27,7 +27,7 @@
     },
     */
     
-    /* Group High and Very High confidence updates
+    /* Group High and Very High confidence updates */
     {
       "matchConfidence": ["high", "very high"],
       "groupName": "high merge confidence"
@@ -37,14 +37,14 @@
       "matchConfidence": ["neutral"],
       "groupName": "neutral confidence"
     },
-    
-    /* Suppress Low Confidence updates
-    {
-      "matchConfidence": ["low"],
-      "dependencyDashboardApproval": true
-    },
     */
-    
+    /* Suppress Low and neutral Confidence updates */
+    {
+      "matchConfidence": ["low", "neutral"],
+      "dependencyDashboardApproval": true,
+      "commitMessagePrefix": "rnv: ![confidence](https://badges.renovateapi.com/packages/{{datasource}}/{{replace '/' '%2f' depName}}/{{{toVersion}}}/confidence-slim/{{{fromVersion}}})  ",
+    },    
+  
 
     /* Automerge Very High Confidence updates
     {
@@ -54,7 +54,7 @@
     },
     */
 
-    /* Grouping with patch, minor and major */
+    /* Grouping with patch, minor and major
     {
       "groupName": "major",
       "matchUpdateTypes": ["major"]
@@ -73,7 +73,7 @@
       "matchUpdateTypes": ["minor", "patch"],
       "matchConfidence": ["high", "very high"],
     },
-    
+    */
 
   ]
 }
