@@ -32,17 +32,10 @@
       "matchConfidence": ["high", "very high"],
       "groupName": "high merge confidence"
     },
-    /* Group neutral confidence updates
-    {
-      "matchConfidence": ["neutral"],
-      "groupName": "neutral confidence"
-    },
-    */
     /* Suppress Low and neutral Confidence updates */
     {
       "matchConfidence": ["low", "neutral"],
       "dependencyDashboardApproval": true,
-      "commitMessagePrefix": "rnv: ![confidence](https://badges.renovateapi.com/packages/{{datasource}}/{{replace '/' '%2f' depName}}/{{{toVersion}}}/confidence-slim/{{{fromVersion}}})  ",
     },    
   
 
