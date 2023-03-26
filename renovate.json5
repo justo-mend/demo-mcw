@@ -9,7 +9,7 @@
     
     /* Group high confidence updates */
     {
-      "groupName": "high merge confidence"
+      "groupName": "high merge confidence",
       "matchConfidence": ["high", "very high"],
     },
 
