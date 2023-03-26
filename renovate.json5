@@ -32,9 +32,10 @@
       "matchConfidence": ["high", "very high"],
       "groupName": "high merge confidence"
     },
+    
     /* Suppress Low and neutral Confidence updates */
     {
-      "matchConfidence": ["low", "neutral"],
+      "matchConfidence": ["low"],
       "dependencyDashboardApproval": true,
     },    
   
