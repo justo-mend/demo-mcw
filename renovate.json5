@@ -5,25 +5,68 @@
     "github>whitesource/merge-confidence:beta"
   ],
   "ignorePresets": ["github>mdp-forks/mc:dev"],
+  "labels": ["update"],
   "packageRules": [
-    
-    /* Group high confidence updates */
+  
+    /* Apply labels based on Merge Confidence */
     {
-      "groupName": "high merge confidence",
-      "matchConfidence": ["high", "very high"],
+      "matchConfidence": ["very high"],
+      "labels": ["v-high"]
     },
+    {
+      "matchConfidence": ["high"],
+      "labels": ["high"]
+    },
+    {
+      "matchConfidence": ["low"],
+      "labels": ["low"]
+    },
+    {
+      "matchConfidence": ["neutral"],
+      "labels": ["neutral"]
+    },
+    
+    
+    /* Group High and Very High Confidence updates
+    {
+      "matchConfidence": ["high", "very high"],
+      "groupName": "high merge confidence"
+    },
+    */
 
-    /* Suppress low confidence updates */
+    /* Suppress Low Confidence updates
     {
       "matchConfidence": ["low"],
       "dependencyDashboardApproval": true
     },
+    */
 
-    /* Auto-merge very-high confidence updates
+    /* Automerge Very High Confidence updates
     {
       "matchConfidence": ["high", "very high"],
-      "matchUpdateTypes": [“patch”, “minor”],
+      "matchUpdateTypes": ["patch", "minor"],
       "automerge": true
+    },
+    */
+
+    /* Grouping with patch, minor and major
+    {
+      "groupName": "major",
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "groupName": "major - high confidence",
+      "matchUpdateTypes": ["major"],
+      "matchConfidence": ["high", "very high"],
+    },
+    {
+      "groupName": "minor and patch",
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "minor and patch - high confidence",
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchConfidence": ["high", "very high"],
     },
     */
 
