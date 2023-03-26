@@ -42,7 +42,9 @@
     {
       "matchConfidence": ["low", "neutral"],
       "dependencyDashboardApproval": true,
+      /*
       "commitMessagePrefix": "rnv: ![confidence](https://badges.renovateapi.com/packages/{{datasource}}/{{replace '/' '%2f' depName}}/{{{toVersion}}}/confidence-slim/{{{fromVersion}}})  ",
+      */
     },    
   
 
