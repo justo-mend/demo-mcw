@@ -35,7 +35,7 @@
     
     /* Suppress Low and neutral Confidence updates */
     {
-      "matchConfidence": ["low"],
+      "matchUpdateTypes": ["patch", "minor"],
       "dependencyDashboardApproval": true,
     },    
   
