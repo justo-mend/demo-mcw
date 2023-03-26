@@ -27,22 +27,23 @@
     },
     */
     
-    /* Group High and Very High confidence updates */
+    /* Group High and Very High confidence updates
     {
       "matchConfidence": ["high", "very high"],
       "groupName": "high merge confidence"
     },
-    /* Group neutral confidence updates */
+    /* Group neutral confidence updates
     {
       "matchConfidence": ["neutral"],
       "groupName": "neutral confidence"
     },
     
-    /* Suppress Low Confidence updates */
+    /* Suppress Low Confidence updates
     {
       "matchConfidence": ["low"],
       "dependencyDashboardApproval": true
     },
+    */
     
 
     /* Automerge Very High Confidence updates
@@ -53,7 +54,7 @@
     },
     */
 
-    /* Grouping with patch, minor and major 
+    /* Grouping with patch, minor and major */
     {
       "groupName": "major",
       "matchUpdateTypes": ["major"]
@@ -72,7 +73,7 @@
       "matchUpdateTypes": ["minor", "patch"],
       "matchConfidence": ["high", "very high"],
     },
-    */
+    
 
   ]
 }
