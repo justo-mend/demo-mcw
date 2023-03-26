@@ -8,7 +8,7 @@
   "labels": ["update"],
   "packageRules": [
   
-    /* Apply labels based on Merge Confidence */
+    /* Apply labels based on Merge Confidence
     {
       "matchConfidence": ["very high"],
       "labels": ["v-high"]
@@ -25,21 +25,25 @@
       "matchConfidence": ["neutral"],
       "labels": ["neutral"]
     },
+    */
     
-    
-    /* Group High and Very High Confidence updates
+    /* Group High and Very High confidence updates */
     {
       "matchConfidence": ["high", "very high"],
       "groupName": "high merge confidence"
     },
-    */
-
-    /* Suppress Low Confidence updates
+    /* Group neutral confidence updates */
+    {
+      "matchConfidence": ["neutral"],
+      "groupName": "neutral confidence"
+    },
+    
+    /* Suppress Low Confidence updates */
     {
       "matchConfidence": ["low"],
       "dependencyDashboardApproval": true
     },
-    */
+    
 
     /* Automerge Very High Confidence updates
     {
